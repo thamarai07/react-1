@@ -1,0 +1,131 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Input Section */
+.input_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.input_field {
+  width: 60%;
+  padding: 12px 16px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input_field:focus {
+  border-color: #3498db;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+}
+
+.add_button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #2ecc71;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add_button:hover {
+  background-color: #27ae60;
+}
+
+/* List Section */
+.list_wrap {
+  max-width: 768px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.list_wrap ul {
+  list-style-type: none;
+}
+
+.card_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease;
+}
+
+.card_item:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.card_text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Buttons */
+.card_buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit_button,
+.delete_button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit_button {
+  background-color: #f1c40f;
+  color: #fff;
+}
+
+.edit_button:hover {
+  background-color: #d4ac0d;
+}
+
+.delete_button {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.delete_button:hover {
+  background-color: #c0392b;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
